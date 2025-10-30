@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(for file in multiple-properties live-in-listing public-information storage-area damage-deposit)",
+      "Bash(do echo \"Writing articles/hosts/listing/$file.html\")",
+      "Bash(done)",
+      "Bash(python fix-headers.py:*)",
+      "WebFetch(domain:www.airbnb.com)",
+      "Bash(for file in fees-before-signing-lease approval-time approval-process what-is-lease-break break-lease-no-penalty cost-to-break-lease what-is-subletting how-to-sublet-apartment paying-rent adding-roommates)",
+      "Bash(do echo \"C:\\Users\\Split Lease\\Desktop\\split-lease-help-center\\articles\\knowledge-base$file.html\")",
+      "Bash(python generate-articles.py:*)",
+      "Bash(python fix-article-headers.py:*)",
+      "Bash(python remove-breadcrumb-icons.py:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Split Lease Help Center\n\n- Complete help center with 65+ articles for guests and hosts\n- Consistent white headers with Split Lease logo across all pages\n- Purple header on main index page only\n- Clean breadcrumb navigation without home icons\n- Responsive design with Split Lease branding\n- Categories: Guests, Hosts, Knowledge Base, About, Support\n- Python automation scripts for header and breadcrumb updates\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git config:*)",
+      "Bash(git push:*)",
+      "Bash(gh --version:*)",
+      "Bash(git rev-parse:*)",
+      "Read(//c/Users/Split Lease/**)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

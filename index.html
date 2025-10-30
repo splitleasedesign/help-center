@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Split Lease Help Center - Find answers about booking part-time rentals, hosting guests, and managing your multi-local lifestyle.">
+    <title>Split Lease Help Center</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/split-lease-header-footer.css">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Lottie Player for animations -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+
+    <!-- Split Lease Header Navigation -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="nav-left">
+                <a href="https://splitlease.app" class="logo">
+                    <img src="assets/images/logo.png" alt="Split Lease" class="logo-image">
+                    <span class="logo-text">Split Lease</span>
+                </a>
+            </div>
+            <button class="hamburger-menu" aria-label="Toggle navigation menu" onclick="toggleMobileMenu()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="nav-center">
+                <div class="nav-dropdown">
+                    <a href="#host" class="nav-link dropdown-trigger" role="button" aria-expanded="false" aria-haspopup="true">
+                        <span class="mobile-text">Host</span><span class="desktop-text">Host with Us</span>
+                        <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu" role="menu" aria-label="Host with Us menu">
+                        <a href="https://app.split.lease/host-step-by-step-guide-to-list" class="dropdown-item" role="menuitem">
+                            <span class="dropdown-title">Why List with Us</span>
+                            <span class="dropdown-desc">New to Split Lease? Learn more about hosting</span>
+                        </a>
+                        <a href="https://app.split.lease/success-stories-guest" class="dropdown-item" role="menuitem">
+                            <span class="dropdown-title">Success Stories</span>
+                            <span class="dropdown-desc">Explore other hosts' feedback</span>
+                        </a>
+                        <a href="https://app.split.lease/signup-login" class="dropdown-item" role="menuitem">
+                            <span class="dropdown-title">List Property</span>
+                        </a>
+                        <a href="https://app.split.lease/policies/cancellation-and-refund-policy" class="dropdown-item" role="menuitem">
+                            <span class="dropdown-title">Legal Information</span>
+                            <span class="dropdown-desc">Review most important policies</span>
+                        </a>
+                        <a href="categories/hosts.html" class="dropdown-item" role="menuitem">
+                            <span class="dropdown-title">FAQs</span>
+                            <span class="dropdown-desc">Frequently Asked Questions</span>
+                        </a>
+                        <a href="https://app.split.lease/signup-login" class="dropdown-item" role="menuitem">
+                            <span class="dropdown-title">Sign Up</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="#stay" class="nav-link dropdown-trigger" role="button" aria-expanded="false" aria-haspopup="true">
+                        <span class="mobile-text">Guest</span><span class="desktop-text">Stay with Us</span>
+                        <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu" role="menu" aria-label="Stay with Us menu">
+                        <a href="https://app.split.lease/search" class="dropdown-item" role="menuitem">
+                            <span class="dropdown-title">Explore Rentals</span>
+                            <span class="dropdown-desc">See available listings!</span>
+                        </a>
+                        <a href="https://app.split.lease/success-stories-guest" class="dropdown-item" role="menuitem">
+                            <span class="dropdown-title">Success Stories</span>
+                            <span class="dropdown-desc">Explore other guests' feedback</span>
+                        </a>
+                        <a href="categories/guests.html" class="dropdown-item" role="menuitem">
+                            <span class="dropdown-title">FAQs</span>
+                            <span class="dropdown-desc">Frequently Asked Questions</span>
+                        </a>
+                        <a href="https://app.split.lease/signup-login" class="dropdown-item" role="menuitem">
+                            <span class="dropdown-title">Sign Up</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="https://app.split.lease/search" class="explore-rentals-btn">Explore Rentals</a>
+                <a href="https://app.split.lease/signup-login" class="nav-link">Sign In</a>
+                <span class="divider">|</span>
+                <a href="https://app.split.lease/signup-login" class="nav-link">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Banner -->
+    <section class="search-banner">
+        <div class="container">
+            <h1>How can we help you?</h1>
+            <p>Search for answers or browse our help articles below</p>
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <i data-feather="search" class="search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search for help..." aria-label="Search help articles">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Categories Grid -->
+        <div class="categories-grid">
+
+            <!-- For Guests Category -->
+            <a href="categories/guests.html" class="category-card">
+                <div class="category-card-icon">
+                    <i data-feather="user"></i>
+                </div>
+                <h3>For Guests</h3>
+                <p>Complete guide for finding spaces, booking, pricing, and managing your Split Lease rental</p>
+                <div class="category-card-meta">
+                    <i data-feather="file-text"></i>
+                    <span>25 articles</span>
+                </div>
+            </a>
+
+            <!-- For Hosts Category -->
+            <a href="categories/hosts.html" class="category-card">
+                <div class="category-card-icon">
+                    <i data-feather="users"></i>
+                </div>
+                <h3>For Hosts</h3>
+                <p>Information for property owners: how to list your space, manage bookings, and maximize your earnings</p>
+                <div class="category-card-meta">
+                    <i data-feather="file-text"></i>
+                    <span>20 articles</span>
+                </div>
+            </a>
+
+            <!-- About Split Lease Category -->
+            <a href="categories/about.html" class="category-card">
+                <div class="category-card-icon">
+                    <i data-feather="info"></i>
+                </div>
+                <h3>About Split Lease</h3>
+                <p>Learn about Split Lease, our mission, and how to contact us</p>
+                <div class="category-card-meta">
+                    <i data-feather="file-text"></i>
+                    <span>3 articles</span>
+                </div>
+            </a>
+
+            <!-- Support Category -->
+            <a href="categories/support.html" class="category-card">
+                <div class="category-card-icon">
+                    <i data-feather="life-buoy"></i>
+                </div>
+                <h3>Support</h3>
+                <p>Legal policies, terms of use, and support resources</p>
+                <div class="category-card-meta">
+                    <i data-feather="file-text"></i>
+                    <span>2 articles</span>
+                </div>
+            </a>
+
+            <!-- Knowledge Base Category -->
+            <a href="categories/knowledge-base.html" class="category-card">
+                <div class="category-card-icon">
+                    <i data-feather="book-open"></i>
+                </div>
+                <h3>Knowledge Base</h3>
+                <p>In-depth articles, guides, and stories about hybrid work and multi-local living</p>
+                <div class="category-card-meta">
+                    <i data-feather="file-text"></i>
+                    <span>15 articles</span>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Info Box -->
+        <div class="info-box info" style="margin: 48px 0;">
+            <div class="info-box-icon">
+                <i data-feather="help-circle"></i>
+            </div>
+            <div class="info-box-content">
+                <p><strong>Still can't find what you're looking for?</strong></p>
+                <p>Contact our support team and we'll be happy to help you out. We typically respond within 24 hours.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Split Lease Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>For Hosts</h4>
+                <a href="https://app.split.lease/signup-login">List Property Now</a>
+                <a href="https://app.split.lease/host-step-by-step-guide-to-list">How to List</a>
+                <a href="https://app.split.lease/policies/cancellation-and-refund-policy">Legal Section</a>
+                <a href="https://app.split.lease/host-guarantees">Guarantees</a>
+                <a href="https://app.split.lease/demo-house-manual">Free House Manual</a>
+            </div>
+            <div class="footer-column">
+                <h4>For Guests</h4>
+                <a href="https://app.split.lease/search">Explore Split Leases</a>
+                <a href="https://app.split.lease/success-stories-guest">Success Stories</a>
+                <a href="https://app.split.lease/signup-login">Speak to an Agent</a>
+                <a href="categories/guests.html">View FAQ</a>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <a href="https://app.split.lease/periodic-tenancy">About Periodic Tenancy</a>
+                <a href="https://app.split.lease/team">About the Team</a>
+                <a href="https://app.split.lease/careers">Careers at Split Lease</a>
+                <a href="https://app.split.lease/blog">View Blog</a>
+            </div>
+            <div class="footer-column">
+                <h4>Refer a friend</h4>
+                <p class="referral-text">You get $50 and they get $50 *after their first booking</p>
+                <div class="referral-options">
+                    <label><input type="radio" name="referral" value="text"> Text</label>
+                    <label><input type="radio" name="referral" value="email"> Email</label>
+                </div>
+                <input type="text" placeholder="Your friend's" class="referral-input">
+                <button class="share-btn">Share now</button>
+            </div>
+            <div class="footer-column">
+                <h4>Import your listing from another site</h4>
+                <p class="import-text">No need to start from scratch</p>
+                <input type="text" placeholder="https://your-listing-link" class="import-input" id="importUrl">
+                <input type="email" placeholder="janedoe@your_email.com" class="import-input" id="importEmail">
+                <button class="import-btn" onclick="handleImportListing()">Submit</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Download Section -->
+    <div class="app-download-section">
+        <div class="app-card">
+            <img src="https://50bf0464e4735aabad1cc8848a0e8b8a.cdn.bubble.io/cdn-cgi/image/w=256,h=330,f=auto,dpr=1,fit=contain/f1743107051105x956510081926083000/iphone-removebg-preview.png" alt="Split Lease App" class="app-phone-image" loading="lazy">
+            <div class="app-content">
+                <p class="app-tagline">Now you can change<br>your nights<br><em>on the go.</em></p>
+                <a href="https://apps.apple.com/app/split-lease" class="app-store-btn">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="40">
+                </a>
+                <p class="app-subtitle">Download at the App Store</p>
+            </div>
+        </div>
+
+        <div class="alexa-card">
+            <img src="https://50bf0464e4735aabad1cc8848a0e8b8a.cdn.bubble.io/cdn-cgi/image/w=256,h=225,f=auto,dpr=1,fit=cover,q=75/f1625329487406x361063433051586300/402087-smart-speakers-amazon-echo-dot-4th-gen-10015594%201.png" alt="Amazon Alexa" class="alexa-device-image" loading="lazy">
+            <div class="alexa-content">
+                <p class="alexa-tagline">Voice-controlled concierge,<br>at your service.</p>
+                <a href="https://www.amazon.com/dp/B08XYZ123" class="alexa-btn">
+                    <span class="amazon-logo">Available on<br><strong>amazon.com</strong></span>
+                </a>
+                <p class="alexa-command">"Alexa, enable Split Lease"</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <a href="https://app.split.lease/terms">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" style="margin-right: 0.5rem;">
+                <path d="M2 2h8v8H2z" stroke="currentColor" stroke-width="1" fill="none"/>
+                <path d="M4 6h4M4 8h3"/>
+            </svg>
+            Terms of Use
+        </a>
+        <span>Made with love in New York City</span>
+        <span>© 2025 SplitLease</span>
+    </div>
+
+    <!-- Initialize Feather Icons and Navigation -->
+    <script src="js/split-lease-nav.js"></script>
+    <script>
+        feather.replace();
+
+        // Simple search functionality
+        const searchInput = document.querySelector('.search-input');
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const searchTerm = this.value;
+                if (searchTerm.trim()) {
+                    console.log('Searching for:', searchTerm);
+                    alert('Search functionality coming soon! Try browsing categories below.');
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
